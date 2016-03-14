@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="jfB-ZM-FEL">
+            <objects>
+                <viewController id="NEL-PQ-nJ1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wcb-l2-KLV"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSK-RY-1bl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4FJ-zH-Eat">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILH-Pr-9JD">
+                                <rect key="frame" x="360" y="0.0" width="240" height="600"/>
+                                <color key="backgroundColor" red="0.62738857550000005" green="0.85004417389999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="fdL-vV-raD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ILH-Pr-9JD" secondAttribute="trailing" constant="-20" id="d8x-of-xlF"/>
+                            <constraint firstItem="ILH-Pr-9JD" firstAttribute="top" secondItem="Wcb-l2-KLV" secondAttribute="bottom" constant="-20" id="efg-Pu-wmD"/>
+                            <constraint firstItem="bSK-RY-1bl" firstAttribute="top" secondItem="ILH-Pr-9JD" secondAttribute="bottom" id="lfn-64-uUP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUt-PV-JaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="-343"/>
+        </scene>
+        <!--Container View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ContainerViewController" customModule="Slide_Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,6 +54,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X5l-Kp-rgl">
+            <objects>
+                <viewController id="JbP-P0-Hs1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vhg-Qw-6TE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ro9-00-k58"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PtQ-0Z-Dcb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8s4-LW-zih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="-456"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="dZF-VG-2Ee">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="D9G-4f-WT7" customClass="MainViewController" customModule="Slide_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AH2-yH-mhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nmy-8b-1IZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="biK-18-XEu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-bO-Zdq">
+                                <rect key="frame" x="258" y="289" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="2hK-aV-sPw"/>
+                                    <constraint firstAttribute="height" constant="21" id="46U-Kq-mE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f13-6H-Kqk">
+                                <rect key="frame" x="260" y="318" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Km1-kX-KkF"/>
+                                    <constraint firstAttribute="height" constant="30" id="vSb-ZW-FIj"/>
+                                </constraints>
+                                <state key="normal" title="Show Menu"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f13-6H-Kqk" firstAttribute="centerX" secondItem="PbG-bO-Zdq" secondAttribute="centerX" id="2q3-2v-puG"/>
+                            <constraint firstItem="f13-6H-Kqk" firstAttribute="top" secondItem="PbG-bO-Zdq" secondAttribute="bottom" constant="8" id="K8h-o6-BM3"/>
+                            <constraint firstItem="PbG-bO-Zdq" firstAttribute="centerX" secondItem="biK-18-XEu" secondAttribute="centerX" id="d9E-V2-sXX"/>
+                            <constraint firstItem="PbG-bO-Zdq" firstAttribute="centerY" secondItem="biK-18-XEu" secondAttribute="centerY" id="p7c-1x-Qlu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4W-UF-eTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R1Y-wh-GBt">
+            <objects>
+                <viewController id="Jw2-iv-bbZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UM8-cW-jNm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpT-cZ-3Vy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="26j-RC-3mF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seK-2M-dF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1188" y="1099"/>
         </scene>
     </scenes>
 </document>
