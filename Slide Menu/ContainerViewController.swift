@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContainerViewController: UIViewController {
+class ContainerViewController: UIViewController, UIGestureRecognizerDelegate {
 
     var mainViewController: MainViewController!
     var menuViewController: MenuViewController?
@@ -20,6 +20,18 @@ class ContainerViewController: UIViewController {
         //mainViewController.delegate = self
         
         self.view.addSubview(mainViewController.view)
+        
+        let panGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "panning:")
+        panGestureRecognizer.edges = .Left
+        mainViewController.view.addGestureRecognizer(panGestureRecognizer)
     }
+    
+    
+    func panning(recognizer: UIPanGestureRecognizer) {
+        print("x vel: \(recognizer.velocityInView(self.view).x) y vel: \(recognizer.velocityInView(self.view).y)")
+    }
+    
+    
+    
 
 }
