@@ -142,16 +142,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-bO-Zdq">
-                                <rect key="frame" x="258" y="289" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="2hK-aV-sPw"/>
-                                    <constraint firstAttribute="height" constant="21" id="46U-Kq-mE5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f13-6H-Kqk">
                                 <rect key="frame" x="260" y="318" width="80" height="30"/>
                                 <constraints>
@@ -163,6 +153,16 @@
                                     <action selector="menuButtonTouched:" destination="D9G-4f-WT7" eventType="touchUpInside" id="z78-8B-gnj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-bO-Zdq">
+                                <rect key="frame" x="223" y="289" width="154" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="2hK-aV-sPw"/>
+                                    <constraint firstAttribute="height" constant="21" id="46U-Kq-mE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -172,6 +172,9 @@
                             <constraint firstItem="PbG-bO-Zdq" firstAttribute="centerY" secondItem="biK-18-XEu" secondAttribute="centerY" id="p7c-1x-Qlu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="PbG-bO-Zdq" id="Y1U-FO-MIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C4W-UF-eTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

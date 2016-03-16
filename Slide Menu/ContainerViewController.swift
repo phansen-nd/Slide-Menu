@@ -13,7 +13,7 @@ enum MenuState {
     case Expanded
 }
 
-class ContainerViewController: UIViewController, UIGestureRecognizerDelegate, MainViewControllerDelegate {
+class ContainerViewController: UIViewController, UIGestureRecognizerDelegate, MainViewControllerDelegate, MenuViewControllerDelegate {
 
     var mainViewController: MainViewController!
     var menuViewController: MenuViewController?
@@ -200,9 +200,22 @@ class ContainerViewController: UIViewController, UIGestureRecognizerDelegate, Ma
             menuViewController!.view.addGestureRecognizer(panMenuBackGestureRecognizer1!)
             
             // Set delegate to main
-            menuViewController!.delegate = mainViewController
+            menuViewController!.delegate = self
         }
     }
     
+    //
+    // MARK: Menu delegate functions
+    //
+    
+    func homeButtonTouched() {
+        toggleMenu()
+        mainViewController.titleLabel.text = "Home Screen"
+    }
+    
+    func secondButtonTouched() {
+        toggleMenu()
+        mainViewController.titleLabel.text = "Another Screen"
+    }
 
 }
