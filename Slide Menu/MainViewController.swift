@@ -14,7 +14,7 @@ protocol MainViewControllerDelegate {
     func createMenu()
 }
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MenuViewControllerDelegate {
 
     var delegate: MainViewControllerDelegate?
     
@@ -25,9 +25,19 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func menuButtonTouched(sender: AnyObject) {
-    
         delegate?.toggleMenu()
+    }
     
+    //
+    // MARK: Menu delegate functions
+    //
+    
+    func homeButtonTouched() {
+        print("yo")
+    }
+    
+    func secondButtonTouched() {
+        print("hi")
     }
 
 }

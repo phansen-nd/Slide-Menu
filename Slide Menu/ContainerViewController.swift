@@ -198,6 +198,9 @@ class ContainerViewController: UIViewController, UIGestureRecognizerDelegate, Ma
             // Add pan gesture recognizer
             panMenuBackGestureRecognizer1 = UIPanGestureRecognizer(target: self, action: "backPanning:")
             menuViewController!.view.addGestureRecognizer(panMenuBackGestureRecognizer1!)
+            
+            // Set delegate to main
+            menuViewController!.delegate = mainViewController
         }
     }
     

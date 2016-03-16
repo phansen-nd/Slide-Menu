@@ -28,6 +28,9 @@
                                             <constraint firstAttribute="width" constant="41" id="h2k-9I-HYa"/>
                                         </constraints>
                                         <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="homeButton:" destination="NEL-PQ-nJ1" eventType="touchUpInside" id="XhB-7H-77S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONk-K8-RjX">
                                         <rect key="frame" x="94" y="323" width="52" height="30"/>
@@ -36,6 +39,9 @@
                                             <constraint firstAttribute="width" constant="52" id="McL-QK-z7z"/>
                                         </constraints>
                                         <state key="normal" title="Second"/>
+                                        <connections>
+                                            <action selector="secondButton:" destination="NEL-PQ-nJ1" eventType="touchUpInside" id="8Da-ai-jJv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
