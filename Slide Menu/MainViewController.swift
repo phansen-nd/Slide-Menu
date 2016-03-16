@@ -9,7 +9,9 @@
 import UIKit
 
 protocol MainViewControllerDelegate {
-    func test()
+    func toggleMenu()
+    func animateMenu(isExpanded: Bool)
+    func createMenu()
 }
 
 class MainViewController: UIViewController {
@@ -20,6 +22,12 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func menuButtonTouched(sender: AnyObject) {
+    
+        delegate?.toggleMenu()
+    
     }
 
 }
