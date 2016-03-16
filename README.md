@@ -11,3 +11,4 @@ The project should download and run on any screen size, with a fixed menu size (
 We used [Ray Wenderlich's slide-out menu](https://www.raywenderlich.com/78568/create-slide-out-navigation-panel-swift) to get some sense for what kind of UI elements would help the user interact with the menu, but we ultimately went with a design much more like the Google Maps menu (menu slides out on top of main view as opposed to main view sliding over to reveal menu).
 
 ## Slides
+[Slides](https://github.com/phansen-nd/Slide-Menu/blob/master/Slide%20Menu.pdf)
